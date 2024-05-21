@@ -1,0 +1,49 @@
+﻿<Window x:Class="lavender.Product"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lavender"
+        mc:Ignorable="d"
+        Title="Product" Height="750" Width="1280">
+    <Grid Background="#FFECDAFF">
+        <StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10">
+                <Label Content="Lavender" FontSize="55" Margin="500,0,0,0" FontFamily="Bauhaus 93"></Label>
+                <Button Width="100" Height="50" Content="Закрыть" FontSize="20" Margin="400,0,0,0" Background="White" BorderBrush="#FF9B4EDE" Click="ButtonBack">
+                    <Button.Resources>
+                        <Style TargetType="Border">
+                            <Setter Property="CornerRadius" Value="20"></Setter>
+                        </Style>
+                    </Button.Resources>
+                </Button>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock Margin="20,10,0,0" FontSize="20">Название</TextBlock>
+                <TextBox Height="30" Margin="0,10,0,0" Name="Name" FontSize="20">имя</TextBox>
+                <TextBlock Margin="20,10,0,0" FontSize="20">Цена</TextBlock>
+                <TextBox Height="30" Margin="0,10,0,0" Name="Price" FontSize="20">цена</TextBox>
+                <TextBlock Margin="20,10,0,0" FontSize="20">Производитель</TextBlock>
+                <TextBox Height="30" Margin="0,10,0,0" Name="Manufacturer" FontSize="20" >кол-во на складе</TextBox>
+                <TextBlock Margin="20,10,0,0" FontSize="20">Штрихкод</TextBlock>
+                <TextBox Height="30" Margin="0,10,0,0" Name="Barcode" FontSize="20" >кол-во на складе</TextBox>
+                <TextBlock Margin="20,10,0,0" FontSize="20">Тип одежды</TextBlock>
+                <TextBox Height="30" Margin="0,10,0,0" Name="Type" FontSize="20" >кол-во на складе</TextBox>
+                <TextBlock Margin="20,10,0,0" FontSize="20">Кол-во на складе</TextBlock>
+                <TextBox Height="30" Margin="0,10,0,0" Name="QuantityWarehouse" FontSize="20" >кол-во на складе</TextBox>
+                <TextBlock Margin="20,10,0,0" FontSize="20">Кол-во в зале</TextBlock>
+                <TextBox Height="30" Margin="0,10,0,0" Name="QuantityHall" FontSize="20" >кол-во в зале</TextBox>
+                <StackPanel>
+                    <Button Content="Сохранить" FontSize="20" Width="200" Height="50" Background="White" Margin="0,10,20,0" HorizontalAlignment="Right" Click="ButtonSave" >
+                        <Button.Resources>
+                            <Style TargetType="Border">
+                                <Setter Property="CornerRadius" Value="20"></Setter>
+                            </Style>
+                        </Button.Resources>
+                    </Button>
+
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
